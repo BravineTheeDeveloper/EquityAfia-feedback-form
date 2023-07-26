@@ -20,29 +20,18 @@
     <div class="main">
     <form method="post" action="/process-form.php">
         <fieldset>
+            <label>Medical Center Visited:<br><i>Kituo cha matibabu ulichotembelea</i><input name="center-visited" id="center-visited" type="text" required></label>
+            <label>Date<br><i>Tarehe</i><input name="date" type="date" id="date" required></label>
+        </fieldset>
+        <fieldset>
+            <label><u>FEEDBACK DETAILS</u></label>
             <label></label>
         </fieldset>
         <fieldset>
-            <legend>Contact Information:</legend>
+            <label><u>CONTACT DETAILS</u></label>
             <label for="first-name">Enter your First Name: <input name="first-name" id="first-name" type="text" required></label>
-            <label for="last-name">Enter your Last Name: <input name="last-name" id="last-name" type="text" required></label>
             <label for="email">Enter your Email: <input name="email" id="email" type="email" required></label>
             <label for="password">Create a New Password: <input name="password" id="password" type="password" pattern="[a-z0-5]{8,}" required></label>
-        </fieldset>
-        <fieldset>
-            <label for="profile-picture">Upload a profile picture: <input name="profile-picture" type="file" id="profile-picture"></label>
-            <label for="age">Input your age (years): <input name="age" type="number" id="age" min="13" max="120" ></label>
-            <label for="referrer">
-                How did you hear about us:
-                <select name="referrer" id="referrer">
-                    <option value="""">(Select one)</option>
-                    <option value="1">YouTube</option>
-                    <option value="2">News</option>
-                    <option value="3">Forums</option>
-                    <option value="4">Others</option>
-                </select>
-            </label>
-            <label for="bio">Provide a bio<textarea name="bio" placeholder="I like coding at the beach..." id="bio" rows="3" cols="30"></textarea></label>
         </fieldset>
         <input type="submit" value="Submit">
     </form>

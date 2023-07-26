@@ -11,16 +11,17 @@ header {
     width: 100%;
     height: 50px;
     box-sizing: border-box;
-    float: left;
+    /* float: left; */
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
     padding: 1%;
-    position: fixed;
+    position: sticky;
+    z-index: 999;
 }
 
 header div:first-of-type {
-    width: 80%;
+    width: 70%;
 }
 
 .logo {
@@ -33,8 +34,12 @@ h1 {
     color: brown;
 }
 
+/* .main {
+    background-color: aliceblue;
+} */
+
 form {
-    width: 60vw;
+    width: 80vw;
     max-width: 500px;
     min-width: 300px;
     margin: 0 auto;
@@ -47,7 +52,7 @@ form {
 fieldset {
     border: none;
     padding: 2rem 0;
-    border-bottom: 3px solid #3b3b4f;
+    border-bottom: 3px solid brown;
 }
 
 fieldset:last-of-type {
@@ -87,7 +92,7 @@ input[type="submit"] {
     margin: 1em auto;
     height: 2em;
     font-size: 1.1rem;
-    background-color: #3b3b4f;
+    background-color: brown;
     border-color: #f5f6f7;
 }
 
