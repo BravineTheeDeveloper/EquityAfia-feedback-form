@@ -2,19 +2,54 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>equityafia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>customerfeedback</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <div>
+            <h1 class="heading">Customer Feedback Form</h1>
+            </div>
+        <div class="logo">
+            <!-- logo -->
+            <img src="src/logo.png" alt="Logo">
+        </div>
+    </header>
 
-    <div class="contact-box">
-        <form>
-        <input type="text" class="input-field" placeholder="Your name">
-        <input type="text" class="input-field" placeholder="Email">
-        <input type="text" class="input-field" placeholder="Subject">
-        <textarea type="text" class="input-field textarea-field" placeholder="Message"></textarea>
-        <button type="button" class="btn">Submit</button>
-        </form>
+    <div class="main">
+    <form method="post" action="/process-form.php">
+        <fieldset>
+            <label></label>
+        </fieldset>
+        <fieldset>
+            <legend>Contact Information:</legend>
+            <label for="first-name">Enter your First Name: <input name="first-name" id="first-name" type="text" required></label>
+            <label for="last-name">Enter your Last Name: <input name="last-name" id="last-name" type="text" required></label>
+            <label for="email">Enter your Email: <input name="email" id="email" type="email" required></label>
+            <label for="password">Create a New Password: <input name="password" id="password" type="password" pattern="[a-z0-5]{8,}" required></label>
+        </fieldset>
+        <fieldset>
+            <label for="profile-picture">Upload a profile picture: <input name="profile-picture" type="file" id="profile-picture"></label>
+            <label for="age">Input your age (years): <input name="age" type="number" id="age" min="13" max="120" ></label>
+            <label for="referrer">
+                How did you hear about us:
+                <select name="referrer" id="referrer">
+                    <option value="""">(Select one)</option>
+                    <option value="1">YouTube</option>
+                    <option value="2">News</option>
+                    <option value="3">Forums</option>
+                    <option value="4">Others</option>
+                </select>
+            </label>
+            <label for="bio">Provide a bio<textarea name="bio" placeholder="I like coding at the beach..." id="bio" rows="3" cols="30"></textarea></label>
+        </fieldset>
+        <input type="submit" value="Submit">
+    </form>
     </div>
+
+    <footer>
+        <p>Designed By @BravineTheeDeveloper</p>
+    </footer>
 </body>
 </html>
