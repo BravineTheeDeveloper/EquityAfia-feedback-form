@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Collect form data
     $center_visited = $_POST["center-visited"];
@@ -27,4 +27,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Oops! Something went wrong. Please try again later.";
     }
 }
-?>
+?> -->
