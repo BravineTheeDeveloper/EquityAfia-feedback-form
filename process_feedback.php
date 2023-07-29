@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mobile_number = $_POST["number"];
 
     // Format the email content
-    $to = "bravinebwire065@gmail.com";
+    $to = "bravinebwire98@gmail.com";
     $subject = "Customer Feedback";
     $message = "Medical Center Visited: $center_visited\n";
     $message .= "Date: $date\n";
