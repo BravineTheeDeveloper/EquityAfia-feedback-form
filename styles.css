@@ -96,8 +96,47 @@ label {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-  }
+}
 
+#button1 {
+    background-color: red;
+}
+
+#button2 {
+    background-color: orangered;
+}
+
+#button3 {
+    background-color: orange;
+}
+
+#button4 {
+    background-color: rgb(242, 204, 132);
+}
+
+#button5 {
+    background-color: yellow;
+}
+
+#button6 {
+    background-color: yellowgreen;
+}
+
+#button7 {
+    background-color: darkolivegreen;
+}
+
+#button8 {
+    background-color: #00FF00;
+}
+
+#button9 {
+    background-color: green;
+}
+
+#button10 {
+    background-color: darkgreen;
+}
 /* .input-field {
     width: 100%;
     height: 70px;
