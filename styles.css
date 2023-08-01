@@ -33,7 +33,7 @@ header div:first-of-type {
 
 .logo {
     float: right;
-    max-height: 40px;
+    max-height: 30px;
 }
 h1 {
     text-align: center;
@@ -245,6 +245,9 @@ input[type="submit"] {
     border-radius: 30px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    transition:.4s ease all;
+    height: 100%;
 }
 
 input[type="file"] {
