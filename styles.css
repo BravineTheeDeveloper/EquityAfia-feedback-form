@@ -46,6 +46,16 @@ h1 {
     color: brown;
 }
 
+.horizontal-line {
+    height: 2px; /* Set the height of the line */
+    background-image: linear-gradient(to right, brown, white, brown);
+    background-size: 100% 100%; /* Ensure the gradient covers the entire width */
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 20px auto; /* Adjust the margin as needed */
+}
+  
+
 /* .main {
     background-color: aliceblue;
 } */
