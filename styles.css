@@ -315,5 +315,7 @@ input[type="file"] {
         outline: 0;
         resize: none;
         margin: 10px 0;
+        border: none; /* Remove the border */
+        background-color: #f2f2f2; /* Set a light grey background color */
     }
 }
