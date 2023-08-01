@@ -90,14 +90,14 @@ label {
     /* display: inline-flex; /* Align buttons horizontally */
     justify-content: center; /* Center buttons horizontally in the container */
     margin-top: 50px;
-    overflow-x: auto; */
+    /* overflow-x: auto; */
 
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 10px; /* Add some gap between the buttons */
-  justify-content: center; /* Center the buttons horizontally */
-  margin-top: 50px;
-  overflow-x: hidden; /* Prevent horizontal scrolling for the button container */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px; /* Add some gap between the buttons */
+    justify-content: center; /* Center the buttons horizontally */
+    margin-top: 50px;
+    overflow-x: hidden; /* Prevent horizontal scrolling for the button container */
 }
 
 .button-wrapper {
@@ -265,7 +265,7 @@ input[type="file"] {
     }
 
     header div:first-of-type h1{
-        font-size: 18px;
+        font-size: 20px;
         width: 70%;
     }
 
