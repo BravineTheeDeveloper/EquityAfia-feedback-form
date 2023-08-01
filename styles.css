@@ -271,8 +271,14 @@ input[type="submit"] {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition:.4s ease all;
     height: 100%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    animation: popButton 1s ease infinite alternate; /* Add animation to pop the button */
+}
+
+@keyframes popButton {
+    0% { transform: scale(1); } /* Initial scale of 1 (normal size) */
+    100% { transform: scale(1.1); } /* Scale of 1.1 (popped size) */
 }
 
 input[type="file"] {
