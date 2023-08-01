@@ -47,15 +47,29 @@ h1 {
 }
 
 .horizontal-line {
+    position: relative;
     height: 2px; /* Set the height of the line */
-    background-image: linear-gradient(to right, brown, white, brown);
-    background-size: 100% 100%; /* Ensure the gradient covers the entire width */
-    background-repeat: no-repeat;
-    background-position: center;
+    background-color: brown; /* Set the initial color as brown */
     margin: 20px auto; /* Adjust the margin as needed */
 }
-  
 
+.horizontal-line::before,
+.horizontal-line::after {
+    content: "";
+  position: absolute;
+  width: 40%;
+  height: 100%;
+  top: 0;
+  background: linear-gradient(to right, transparent 0%, brown 20%%, white 80%, transparent 100%); /* Gradient fading to white */
+}
+
+.horizontal-line::before {
+    left: 0;
+}
+
+  .horizontal-line::after {
+    right: 0;
+}
 /* .main {
     background-color: aliceblue;
 } */
