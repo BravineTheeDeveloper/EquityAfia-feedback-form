@@ -69,7 +69,7 @@ h1 {
 
   .horizontal-line::after {
     right: 0;
-    background: linear-gradient(to left, transparent 0%, brown 10%, white 0%, transparent 100%);
+    background: linear-gradient(to left, transparent 0%, brown 0%, white 0%, transparent 100%);
 }
 /* .main {
     background-color: aliceblue;
