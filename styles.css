@@ -224,12 +224,16 @@ textarea {
 input, select {
     width: 100%;
     height: 30px;
+    box-sizing: border-box;
+    padding: 1%;
 }
 
 input, textarea, select{
     box-sizing: border-box;
     padding: 1%;
     outline: none;
+    border: none;
+    background-color: #f2f2f2;
 }
 
 .inline {
