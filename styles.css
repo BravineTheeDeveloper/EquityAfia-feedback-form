@@ -10,6 +10,8 @@ body {
     width: 100%;
     height: 100vh;
     margin: 0;
+    padding: 0;
+    overflow-x: none;
 }
 
 header {
@@ -49,22 +51,22 @@ h1 {
 } */
 
 form {
-    /* width: 80vw;
+    width: 80vw;
     max-width: 500px;
     min-width: 300px;
     margin: 0 auto;
     padding-bottom: 2em;
     padding-top: 0;
     padding-left: 0;
-    padding-right: 0; */
+    padding-right: 0;
 
-    background-color: #fff;
+    /* background-color: #fff;
     display: flex;
     flex-direction: column;
     padding: 2vw 4vw;
     width: 90%;
     max-width: 600px;
-    border-radius: 10px;
+    border-radius: 10px; */
 }
 
 fieldset {
@@ -88,6 +90,7 @@ label {
     display: inline-flex; /* Align buttons horizontally */
     justify-content: center; /* Center buttons horizontally in the container */
     margin-top: 50px;
+    overflow-x: auto;
 }
 
 .button-wrapper {
@@ -95,6 +98,13 @@ label {
     flex-direction: column;
     align-items: center;
     /* justify-content: space-around; */
+    max-width: 100%;
+  }
+
+  .button-text {
+    margin-top: 5px;
+    font-size: 14px;
+    overflow-wrap: break-word;
   }
 
 .button {
