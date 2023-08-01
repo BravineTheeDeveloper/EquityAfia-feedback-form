@@ -290,6 +290,32 @@ input[type="file"] {
     padding: 1px 2px;
 }
 
+.links{
+    padding: 0 0;
+    font-weight: 600;
+    font-size: 14px;
+}
+.links ul li {
+    padding: 0 0 10px 0;
+}
+.footer a:hover{
+    color: #ee9c94;
+}
+.contact_details {
+    position: relative;
+    top: 40px;
+    height: max-content;
+}
+.contact_details li{
+    font-size: 14px;
+    padding-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contact_details li i{
+font-size: 13px;
+}
+
+
 /* Media Queries */
 @media screen and (max-width: 768px) {
     body{
