@@ -37,7 +37,7 @@ h1 {
     text-align: center;
     margin: 1em auto;
     color: brown;
-    font-size: 19px;
+    font-size: 22px;
 }
 
 .titles {
@@ -109,8 +109,18 @@ label {
 }
 
 .button[data-selected="true"] {
-    background-color: #33FF57;
+    background-color: gray;
     transform: scale(1.1); /* Increase size when selected */
+}
+
+.button[data-selected="false"] {
+    background-color: grey;
+    transition: scale(1.1);
+}
+
+/* Hover effect: Increase size when hovered */
+.button:hover {
+    transform: scale(1.1);
 }
 
 #button1 {
