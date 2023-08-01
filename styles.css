@@ -60,7 +60,7 @@ h1 {
   width: 40%;
   height: 100%;
   top: 0;
-  background: linear-gradient(to right, transparent 0%, brown 20%%, white 80%, transparent 100%); /* Gradient fading to white */
+  background: linear-gradient(to right, transparent 0%, brown 0%, white 0%, transparent 100%); /* Gradient fading to white */
 }
 
 .horizontal-line::before {
@@ -69,6 +69,7 @@ h1 {
 
   .horizontal-line::after {
     right: 0;
+    background: linear-gradient(to left, transparent 0%, brown 10%, white 0%, transparent 100%);
 }
 /* .main {
     background-color: aliceblue;
