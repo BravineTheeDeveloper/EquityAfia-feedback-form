@@ -29,6 +29,9 @@ header {
 
 header div:first-of-type {
     width: 80%;
+    /* aspect-ratio: 3/2; */
+    object-fit: contain;
+    mix-blend-mode: color-burn;
 }
 
 .logo {
