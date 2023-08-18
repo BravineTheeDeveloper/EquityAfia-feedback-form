@@ -304,6 +304,11 @@ footer {
     margin-bottom: 10px;
   }
 
+  .footer-left img {
+    /* object-fit: contain; */
+    /* mix-blend-mode: color-burn; */
+  }
+
 
 /* Media Queries */
 @media screen and (max-width: 768px) {
