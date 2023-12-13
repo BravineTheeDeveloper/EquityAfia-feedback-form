@@ -74,9 +74,7 @@ h1 {
     right: 0;
     background: linear-gradient(to left, transparent 0%, brown 0%, white 0%, transparent 100%);
 }
-/* .main {
-    background-color: aliceblue;
-} */
+
 
 form {
     width: 80vw;
@@ -188,6 +186,7 @@ label {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    backdrop-filter: blur(30px);
 }
 
 #contact__info>label>input {
