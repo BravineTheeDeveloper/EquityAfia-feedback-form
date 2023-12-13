@@ -19,7 +19,8 @@
     <div class="horizontal-line"></div>
 
     <div class="main">
-    <form action="https://formsubmit.co/lavingtonreception@equityafia.co.ke" method="POST">
+        <div class="overlay"></div>
+    <form action="https://formsubmit.co/sarahodini@gmail.com" method="POST">
         <fieldset>
             <label for="center-visited">Medical Center Visited:<br><i>Kituo cha matibabu ulichotembelea</i><input name="Center-visited" id="Center-visited" type="text" required></label>
             <label for="date">Date<br><i>Tarehe</i><input name="Date" type="Date" id="Date" required></label>
@@ -27,86 +28,61 @@
         <fieldset>
             <label class="titles"><u>FEEDBACK DETAILS</u></label>
             How likely are you to recommend us to a family/ colleague/ friend ?
-            <div class="button-container">
-                <div class="button-wrapper">
-                  <button name="Rating" class="button" id="button1" data-selected="false" data-button-id="button1">1</button>
-                  <div class="button-text">Not all likely</div>
-                </div>
-                <div class="button-wrapper">
-                  <button name="Rating" class="button" id="button2" data-selected="false" data-button-id="button2">2</button>
-                </div>
-                <div class="button-wrapper">
-                    <button class="button" id="button3" data-selected="false" data-button-id="button3">3</button>
-                </div>
-                <div name="Rating" class="button-wrapper">
-                    <button class="button" id="button4" data-selected="false" data-button-id="button4">4</button>
-                </div>
-                <div class="button-wrapper">
-                    <button name="Rating" class="button" id="button5" data-selected="false" data-button-id="button5">5</button>
-                    <div class="button-text">Neutral</div>
-                </div>
-                <div class="button-wrapper">
-                    <button name="Rating" class="button" id="button6" data-selected="false" data-button-id="button6">6</button>
-                </div>
-                <div class="button-wrapper">
-                    <button name="Rating" class="button" id="button7" data-selected="false" data-button-id="button7">7</button>
-                </div>
-                <div class="button-wrapper">
-                    <button name="Rating" class="button" id="button8" data-selected="false" data-button-id="button8">8</button>
-                </div>
-                <div class="button-wrapper">
-                    <button class="button" id="button9" data-selected="false" data-button-id="button9">9</button>
-                </div>
-                <div class="button-wrapper">
-                    <button name="Rating" class="button" id="button10" data-selected="false" data-button-id="button10">10</button>
-                    <div class="button-text">Extremely Likely</div>
-                </div>
+            <div class="container">
+                <form>
+                    <label>
+                        <input type="radio" name="radio" checked="">
+                        <span>Not Likely</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="radio">
+                        <span>Scarcely</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="radio">
+                        <span>Neutral</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="radio">
+                        <span>Likely</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="radio">
+                        <span>Extremely Likely</span>
+                    </label>
+                </form>
             </div>
             <br><br>
             <label>Please Share your reasons for the above response: </label>
             <textarea type="textarea" name="Reasons" id="Reasons" required></textarea>
         </fieldset>
 
-        <fieldset>
+        <fieldset id="contact__info">
             <label class="titles"><u>CONTACT DETAILS (OPTIONAL)</u></label>
             <label for="first-name">Enter your First Name: <input name="first-name" id="first-name" type="text"></label>
             <label for="email">Enter your Email: <input name="email" id="email" type="email" ></label>
             <label for="number">Mobile Number:<input name="number" type="number" id="number" ></label>
         <input type="submit" value="Submit">
+        </fieldset>
     </form>
     </div>
-<!--
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-        function sendEmail();{
-        Email.send({
-            Host : "smtp.gmail.com",
-            Username : "sarahodini@gmail.com",
-            Password : "23966160",
-            To : 'sarahodini@gmail.com',
-            From : document.getElementById("email").value,
-            Subject : "This is the subject",
-            Body : "And this is the body"
-        }).then(
-        message => alert(message)
-        );
-}
-    </script> -->
+
 
     <footer class="footer">
         <div class="footer-content">
-          <div class="footer-left">
-            <img src="src/logo.png" alt="logo">
-          </div>
-          <div class="footer-center">
-            <p>Copyright &copy; Equity Afia. All rights reserved.</p>
+            <div class="footer-left">
+                <img src="src/logo.png" alt="logo">
+            </div>
+
+            <div class="footer-center">
+            <p>Copyright &copy; Equity Afia.<br>All rights reserved.</p>
             <p><span class="email-icon">&#9993;</span>
                 <a href="mailto:lavingtonreception@equityafia.co.ke">lavingtonreception@equityafia.co.ke</a></p>
             <p> <p><span class="phone-icon">&#9742;</span>
-               <a href="tel:0765000200">0765000200</a></p>
-          </div>
+                <a href="tel:0765000200">0765000200</a></p>
+            </div>
         </div>
-      </footer>
+    </footer>
 
     <script src="script.js"></script>
 </body>

@@ -59,18 +59,18 @@ h1 {
 .horizontal-line::before,
 .horizontal-line::after {
     content: "";
-  position: absolute;
-  width: 40%;
-  height: 100%;
-  top: 0;
-  background: linear-gradient(to right, transparent 0%, brown 0%, white 0%, transparent 100%); /* Gradient fading to white */
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    top: 0;
+    background: linear-gradient(to right, transparent 0%, brown 0%, white 0%, transparent 100%); /* Gradient fading to white */
 }
 
 .horizontal-line::before {
     left: 0;
 }
 
-  .horizontal-line::after {
+.horizontal-line::after {
     right: 0;
     background: linear-gradient(to left, transparent 0%, brown 0%, white 0%, transparent 100%);
 }
@@ -83,18 +83,26 @@ form {
     max-width: 500px;
     min-width: 300px;
     margin: 0 auto;
-    padding-bottom: 2em;
-    padding-top: 0;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 2em;
+    backdrop-filter: blur(30px);
+    border-radius: 5px;
+}
 
-    /* background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    padding: 2vw 4vw;
-    width: 90%;
-    max-width: 600px;
-    border-radius: 10px; */
+.main {
+    background-image: url(/src/background-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(2, 2, 2, 0.7);
+    mix-blend-mode: overlay;
 }
 
 fieldset {
@@ -113,112 +121,85 @@ label {
 }
 
 /*Buttons */
-
-.button-container {
-    /* display: inline-flex; /* Align buttons horizontally */
-    justify-content: center; /* Center buttons horizontally in the container */
-    margin-top: 30px;
-    margin-bottom: 10px;
-    /* overflow-x: auto; */
-
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 5px; /* Add some gap between the buttons */
-    justify-content: center; /* Center the buttons horizontally */
-    margin-top: 20px;
-    overflow-x: hidden; /* Prevent horizontal scrolling for the button container */
-}
-
-.button-wrapper {
-    display: inline-flex;
+.container form {
+    display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    align-items: center;
-    /* justify-content: space-around; */
-    max-width: 120px;
-    flex-basis: 20%;
-    margin: 3px;
-  }
+}
 
-  .button-text {
-    margin-top: 5px;
-    font-size: 14px;
-    overflow-wrap: break-word;
-  }
-
-.button {
-    padding: 10px 20px;
-    margin: 5px 5px;
-    font-size: 16px;
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
+.container label {
+    display: flex;
     cursor: pointer;
-    transition: all 0.2s ease;
+    font-weight: 500;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 0.375em;
 }
 
-.button[data-selected="true"] {
-    background-color: gray;
-    transform: scale(1.1); /* Increase size when selected */
+.container  label input {
+    position: absolute;
+    left: -9999px;
 }
 
-.button[data-selected="false"] {
-    background-color: grey;
-    transition: scale(1.1);
+.container label input:checked + span {
+    background-color: #ff6600;
+    color: white;
 }
 
-/* Hover effect: Increase size when hovered */
-.button:hover {
-    transform: scale(1.1);
+.container label input:checked + span:before {
+    box-shadow: inset 0 0 0 0.4375em #b32d00;
 }
 
-#button1 {
-    background-color: red;
+.container label span {
+    display: flex;
+    align-items: center;
+    padding: 0.375em 0.75em 0.375em 0.375em;
+    border-radius: 99em;
+    transition: 0.25s ease;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 500;
 }
 
-#button2 {
-    background-color: orangered;
+.container label span:hover {
+    background-color: #d6d6e5;
 }
 
-#button3 {
-    background-color: orange;
+.container label span:before {
+    display: flex;
+    flex-shrink: 0;
+    content: "";
+    background-color: #fff;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    margin-right: 0.375em;
+    transition: 0.25s ease;
+    box-shadow: inset 0 0 0 0.125em #ffad99;
 }
 
-#button4 {
-    background-color: rgb(242, 204, 132);
+
+/* Button End here */
+
+
+/* Contact FORM */
+
+#contact__info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-#button5 {
-    background-color: yellow;
-    color: black;
+#contact__info>label>input {
+    width: 450px;
 }
 
-#button6 {
-    background-color: yellowgreen;
+#contact__info>label {
+    width: 470px;
 }
 
-#button7 {
-    background-color: darkolivegreen;
-}
 
-#button8 {
-    background-color: #00FF00;
-}
-
-#button9 {
-    background-color: green;
-}
-
-#button10 {
-    background-color: darkgreen;
-}
-/* .input-field {
-    width: 100%;
-    height: 70px;
-    margin-top: 20px;
-    padding-right: 10px;
-    border-radius: 14px;
-    outline: none;
-} */
+/* End of Contact form */
 
 textarea {
     width: 100%;
@@ -250,23 +231,8 @@ input, textarea, select{
     vertical-align: middle;
 }
 
-/* input, textarea {
-    background-color: #0a0a23;
-    color: #ffffff;
-    border-color: #0a0a23;
-    border-radius: 1px;
-} */
 
 input[type="submit"] {
-    /* display: block;
-    width: 60%;
-    min-width: 300px;
-    margin: 1em auto;
-    height: 2em;
-    font-size: 1.1rem;
-    background-color: brown;
-    border-color: #f5f6f7; */
-
     padding: 20px;
     background: brown;
     color: #fff;
@@ -294,20 +260,34 @@ input[type="file"] {
     padding: 1px 2px;
 }
 
-footer {
-    /* background: var(--clr-grey-1); */
-    padding: 2rem 1rem;
+.footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     margin-bottom: 10px;
-  }
+    background-color: #e0e0eb;
+}
 
-  .footer-left img {
-    /* object-fit: contain; */
-    /* mix-blend-mode: color-burn; */
-  }
+.footer-content {
+    display: grid;
+    grid-template-columns: 0.3fr 0.7fr;
+    gap: 12px;
+}
+
+.footer-left {
+    transform: scale(0.7);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.footer-center>p{
+    transform: scale(0.95);
+    /* white-space: wrap; */
+}
+
+
 
 
 /* Media Queries */
@@ -346,5 +326,13 @@ footer {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-      }
+    }
+
+    #contact__info>label>input {
+        width: 300px;
+    }
+
+    #contact__info>label {
+        width: 320px;
+    }
 }
