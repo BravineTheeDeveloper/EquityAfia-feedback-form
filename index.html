@@ -30,23 +30,23 @@
                 How likely are you to recommend us to a family/ colleague/ friend ?
                 <div class="container">
                         <label>
-                            <input type="radio" name="radio" checked="">
+                            <input type="radio" name="feedback" checked="" onclick="handleRadioClick('Not Likely')">
                             <span>Not Likely</span>
                         </label>
                         <label>
-                            <input type="radio" name="radio">
+                            <input type="radio" name="feedback" onclick="handleRadioClick('Scarcely')">
                             <span>Scarcely</span>
                         </label>
                         <label>
-                            <input type="radio" name="radio">
+                            <input type="radio" name="feedback" onclick="handleRadioClick('Neutral')">
                             <span>Neutral</span>
                         </label>
                         <label>
-                            <input type="radio" name="radio">
+                            <input type="radio" name="feedback" onclick="handleRadioClick('Likely')">
                             <span>Likely</span>
                         </label>
                         <label>
-                            <input type="radio" name="radio">
+                            <input type="radio" name="feedback" onclick="handleRadioClick('Extremely Likely')">
                             <span>Extremely Likely</span>
                         </label>
                 </div>
@@ -80,6 +80,15 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        function handleRadioClick(clickedValue) {
+            const radioButtons = document.querySelectorAll('input[name="feedback"]');
+            radioButtons.forEach(button => {
+                if (button.nextElementSibling.textContent !== clickedValue) {
+                    button.checked = false;
+                }
+            });
+        }
+    </script>
 </body>
 </html>
