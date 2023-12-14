@@ -47,6 +47,7 @@ h1 {
 
 .titles {
     color: brown;
+    font-weight: 500;
 }
 
 .horizontal-line {
@@ -82,7 +83,7 @@ form {
     min-width: 300px;
     margin: 0 auto;
     padding: 2em;
-    backdrop-filter: blur(30px);
+    backdrop-filter: blur(6px);
     border-radius: 5px;
 }
 
@@ -186,7 +187,7 @@ label {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    backdrop-filter: blur(30px);
+    backdrop-filter: blur(6px);
 }
 
 #contact__info>label>input {
@@ -257,6 +258,10 @@ input[type="submit"] {
 
 input[type="file"] {
     padding: 1px 2px;
+}
+
+footer {
+    background-color: #e0e0eb;
 }
 
 .footer {
@@ -333,5 +338,39 @@ input[type="file"] {
 
     #contact__info>label {
         width: 320px;
+    }
+}
+
+.footer {
+    text-align: center; /* Center align the content */
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-left img {
+    max-width: 100%; /* Make sure the logo doesn't exceed its container */
+}
+
+.footer-center {
+    margin-top: 10px; /* Add space between the logo and the rest of the content */
+}
+
+/* Media query for screens with a maximum width of 320px */
+@media screen and (max-width: 320px) {
+    .footer-content {
+        flex-direction: column; /* Change the layout to a column for small screens */
+        align-items: center; /* Center align items horizontally */
+    }
+
+    .footer-center {
+        margin-top: 10px; /* Add space between the logo and the rest of the content */
+    }
+
+    form {
+        width: 90vw; /* Adjust the width for smaller screens */
+        padding: 1em; /* Adjust the padding for smaller screens */
     }
 }
