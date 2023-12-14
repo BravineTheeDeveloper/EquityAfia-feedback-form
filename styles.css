@@ -351,14 +351,14 @@ footer {
 }
 
 .footer-left img {
-    max-width: 100%; /* Make sure the logo doesn't exceed its container */
+    max-width: 100%;
 }
 
 .footer-center {
-    margin-top: 10px; /* Add space between the logo and the rest of the content */
+    margin-top: 10px;
 }
 
-/* Media query for screens with a maximum width of 320px */
+
 @media screen and (max-width: 320px) {
     .footer-content {
         flex-direction: column; /* Change the layout to a column for small screens */
