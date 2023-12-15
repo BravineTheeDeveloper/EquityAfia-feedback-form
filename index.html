@@ -22,7 +22,7 @@
         <div class="overlay"></div>
         <form action="https://formsubmit.co/lavingtonreception@equityafia.co.ke" method="POST">
             <fieldset>
-                <label for="center-visited">Medical Center Visited:<br><i>Kituo cha matibabu ulichotembelea</i><input name="Center-visited" id="Center-visited" type="text" required></label>
+                <label for="center-visited"><span class="text">Medical Center Visited:<br><i>Kituo cha matibabu ulichotembelea</span></i><input name="Center-visited" id="Center-visited" type="text" required></label>
                 <label for="date">Date<br><i>Tarehe</i><input name="Date" type="Date" id="Date" required></label>
             </fieldset>
             <fieldset>
@@ -81,10 +81,12 @@
     </footer>
 
     <script>
-        function handleRadioClick(clickedValue) {
-            const radioButtons = document.querySelectorAll('input[name="feedback"]');
+        function handleRadioClick(clickedButton) {
+            const clickedName = clickedButton.name;
+            const radioButtons = document.querySelectorAll(`input[name="${clickedName}"]`);
+
             radioButtons.forEach(button => {
-                if (button.nextElementSibling.textContent !== clickedValue) {
+                if (button !== clickedButton) {
                     button.checked = false;
                 }
             });
