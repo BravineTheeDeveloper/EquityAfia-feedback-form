@@ -221,7 +221,7 @@ input, textarea, select{
     padding: 1%;
     outline: none;
     border: none;
-    background-color: #f2f2f2;
+    background-color: #b9a4a4;
 }
 
 .inline {
@@ -237,7 +237,7 @@ input, textarea, select{
 input[type="submit"] {
     padding: 20px;
     background: brown;
-    color: #fff;
+    color: #000;
     font-size: 15px;
     border: 0;
     outline: none;
@@ -264,6 +264,7 @@ input[type="file"] {
 
 footer {
     background-color: #e0e0eb;
+    color: #000;
 }
 
 .footer {
