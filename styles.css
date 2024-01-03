@@ -237,7 +237,7 @@ input, textarea, select{
 input[type="submit"] {
     padding: 20px;
     background: brown;
-    color: #000;
+    color: #fff;
     font-size: 15px;
     border: 0;
     outline: none;
@@ -308,6 +308,11 @@ footer {
         box-sizing: border-box;
         padding: 1% 2%;
         justify-content: space-between;
+    }
+
+    .logo{
+        float: right;
+        font-size: 15px;
     }
 
     header div:first-of-type h1{
