@@ -108,6 +108,7 @@ fieldset {
     border: none;
     padding: 2rem 0;
     border-bottom: 3px solid brown;
+    color: black;
 }
 
 fieldset:last-of-type {
@@ -117,6 +118,7 @@ fieldset:last-of-type {
 label {
     display: block;
     margin: 0.5rem 0;
+    color: #000;
 }
 
 /*Buttons */
